@@ -17,7 +17,7 @@ import jsPDF from "jspdf";
 import axiosInstance from "../utils/axiosInstance";
 import { useAuth } from "../context/AuthContext";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 export default function AccessibilityChecker() {
   const [figmaUrl, setFigmaUrl] = useState("");
